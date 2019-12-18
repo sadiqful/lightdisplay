@@ -1,0 +1,50 @@
+:root {
+  --color-one: #025ba0;
+  --color-two: #9bc72b;
+  --color-three: #f0c517;
+  --color-four: #bf1724;
+  --color-five: #5cc9f4;
+  --white: #fff;
+  --black: #000;
+  --grey: #999;
+  background: var(--black);
+  color: var(--white);
+}
+
+body {
+  font-family: 'Alatsi', sans-serif;
+}
+
+.bulbs {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.bulb {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.bulb.color-one {
+  background: var(--color-one);
+}
+
+.bulb.color-two {
+  background: var(--color-two);
+}
+
+.bulb.color-three {
+  background: var(--color-three);
+}
+
+.bulb.color-four {
+  background: var(--color-four);
+}
+
+.bulb.color-five {
+  background: var(--color-five);
+}

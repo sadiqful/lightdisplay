@@ -24,6 +24,7 @@ body {
 }
 
 .bulb {
+  position: relative;
   border-radius: 50%;
   height: 30px;
   width: 30px;
@@ -47,4 +48,17 @@ body {
 
 .bulb.color-five {
   background: var(--color-five);
+}
+
+.bulb::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #222;
+  width: 10px;
+  height: 10px;
+  background: #222;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  left: 25%;
+  top: -12px;
 }

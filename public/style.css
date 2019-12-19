@@ -175,3 +175,59 @@ body {
 .bulb:last-of-type::after {
   border: none;
 }
+
+.bulb-settings {
+  background: var(--white);
+  color: #333;
+  width: 500px;
+  margin: 30px auto 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bulb-settings .group {
+  align-items: center;
+  display: flex;
+  margin: 15px 0;
+}
+
+.bulb-settings .group label {
+  flex-basis: 80px;
+}
+
+.checkbox-container {
+  cursor: pointer;
+  width: 43px;
+  height: 20px;
+  background: var(--grey);
+  border-radius: 100px;
+  margin-right: 5px;
+  position: relative;
+  padding: 6px 12px;
+  transition-duration: 0.4s;
+}
+
+.checkbox-container.active {
+  background: var(--black);
+}
+
+.checkbox-container.active::after {
+  left: 50%;
+}
+
+.checkbox-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: var(--white);
+  border-radius: 100%;
+  left: 5%;
+  top: 9%
+  transition-duration: 0.4s;
+}
+
+.switch {
+  opacity: 0;
+  visibility: hidden;
+}

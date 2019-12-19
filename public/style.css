@@ -118,26 +118,33 @@ body {
   border-radius: 50%;
   height: 30px;
   width: 30px;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
 }
 
 .bulb.color-one {
   background: var(--color-one);
+  animation-name: light-up-color-one;
 }
 
 .bulb.color-two {
   background: var(--color-two);
+  animation-name: light-up-color-two;
 }
 
 .bulb.color-three {
   background: var(--color-three);
+  animation-name: light-up-color-three;
 }
 
 .bulb.color-four {
   background: var(--color-four);
+  animation-name: light-up-color-four;
 }
 
 .bulb.color-five {
   background: var(--color-five);
+  animation-name: light-up-color-five;
 }
 
 .bulb::before {

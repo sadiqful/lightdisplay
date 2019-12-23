@@ -9,4 +9,11 @@ checkboxContainer.addEventListener('click', e => {
 
 switchContainer.addEventListener('change', () => {
   bulbContainer.classList.toggle('on')
+  switchState.textContent = switchLabels[switchState.textContent];
 })
+
+const switchState = document.querySelector('.switch-state')
+const switchLabels = {
+  on: 'off',
+  Off: 'on',
+};
